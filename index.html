@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Madonna - Confessions II</title>
+    <style>
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+
+      img {
+        -ms-interpolation-mode: bicubic;
+        border: 0;
+        display: block;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+        background: #ff0900;
+        color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .wrapper {
+        width: 100%;
+        background: #ff0900;
+      }
+
+      .container {
+        width: 600px;
+        max-width: 600px;
+      }
+
+      .header-label {
+        font-size: 21px;
+        font-weight: 900;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+
+      .headline {
+        font-size: 34px;
+        font-weight: 900;
+        line-height: 38px;
+        text-transform: uppercase;
+      }
+
+      .subhead {
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 30px;
+        text-transform: uppercase;
+      }
+
+      .copy {
+        color: #ff31ef;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .button {
+        background: #ff31ef;
+        border-radius: 999px;
+        color: #000000;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 20px;
+        padding: 19px 34px;
+        text-transform: uppercase;
+      }
+
+      .date {
+        color: #ff31ef;
+        font-size: 22px;
+        font-weight: 900;
+        line-height: 26px;
+        text-transform: uppercase;
+      }
+
+      .product-title {
+        color: #ff31ef;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 23px;
+        text-transform: uppercase;
+      }
+
+      .product-button {
+        background: #ff31ef;
+        border-radius: 999px;
+        color: #000000;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 14px;
+        padding: 12px 28px;
+        text-transform: uppercase;
+      }
+
+      .product-card {
+        background: #000000;
+      }
+
+      .product-media {
+        background: #ff31ef;
+        padding: 0;
+      }
+
+      .product-img {
+        width: 294px;
+      }
+
+      .product-info {
+        height: 126px;
+        padding: 10px 16px 20px;
+      }
+
+      .nav-link {
+        color: #ff31ef;
+        font-size: 27px;
+        font-weight: 900;
+        line-height: 32px;
+        text-transform: uppercase;
+      }
+
+      .social-link {
+        color: #000000;
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 28px;
+      }
+
+      .footer {
+        color: #ff31ef;
+        font-size: 9px;
+        font-weight: 700;
+        line-height: 11px;
+      }
+
+      .mobile-only {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+      }
+
+      @media screen and (max-width: 620px) {
+        .container {
+          width: 100% !important;
+          max-width: 320px !important;
+        }
+
+        .content-pad {
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+
+        .desktop-label {
+          display: none !important;
+          height: 0 !important;
+          overflow: hidden !important;
+          width: 0 !important;
+        }
+
+        .desktop-only {
+          display: none !important;
+          height: 0 !important;
+          max-height: 0 !important;
+          overflow: hidden !important;
+          width: 0 !important;
+        }
+
+        .mobile-only {
+          display: block !important;
+          max-height: none !important;
+          overflow: visible !important;
+        }
+
+        .hero-img {
+          width: 100% !important;
+        }
+
+        .full-img {
+          width: 282px !important;
+        }
+
+        .headline {
+          font-size: 24px !important;
+          line-height: 29px !important;
+          text-align: left !important;
+        }
+
+        .subhead {
+          font-size: 18px !important;
+          line-height: 21px !important;
+          text-align: left !important;
+        }
+
+        .copy {
+          font-size: 10px !important;
+          line-height: 12px !important;
+        }
+
+        .button {
+          font-size: 11px !important;
+          line-height: 13px !important;
+          padding: 14px 18px !important;
+        }
+
+        .date {
+          font-size: 20px !important;
+          line-height: 24px !important;
+        }
+
+        .product-column {
+          display: block !important;
+          width: 100% !important;
+          padding: 0 0 12px 0 !important;
+        }
+
+        .product-title {
+          font-size: 18px !important;
+          line-height: 21px !important;
+        }
+
+        .product-img,
+        .social-img {
+          width: 100% !important;
+        }
+
+        .product-info {
+          height: auto !important;
+          padding: 10px 16px 20px !important;
+        }
+
+        .nav-link {
+          font-size: 18px !important;
+          line-height: 22px !important;
+        }
+
+        .social-link {
+          font-size: 24px !important;
+        }
+
+        .footer {
+          font-size: 6px !important;
+          line-height: 8px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display:none;max-height:0;overflow:hidden;opacity:0;">
+      Grindr exclusive vinyl picture disc. Available July 3.
+    </div>
+
+    <table role="presentation" class="wrapper" width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td align="center">
+          <table role="presentation" class="container" width="600" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td class="content-pad" style="padding:30px 0 26px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td class="desktop-label header-label" width="40%" align="left">Madonna</td>
+                    <td width="20%" align="center">
+                      <img src="assets/logo.png" width="66" alt="Confessions II logo" style="margin:0 auto;">
+                    </td>
+                    <td class="desktop-label header-label" width="40%" align="right">Confessions II</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="content-pad">
+                <img class="hero-img desktop-only" src="assets/hero.png" width="600" alt="Madonna Confessions II campaign image">
+                <img class="hero-img mobile-only" src="assets/hero-mobile.png" width="288" alt="Madonna Confessions II campaign image">
+              </td>
+            </tr>
+
+            <tr>
+              <td class="content-pad" align="center" style="padding:42px 16px 26px;">
+                <div class="headline">Mother is closer than ever!</div>
+                <div class="subhead">Grindr exclusive vinyl</div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="content-pad">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#000000;">
+                  <tr>
+                    <td align="center" style="padding:17px 12px;">
+                      <div class="copy">
+                        Confessions II is serving on an LIMITED Grindr vinyl picture disc.<br>
+                        She&rsquo;s rare, she&rsquo;s filthy, she&rsquo;s everything and ONE TIME PRESSED!
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center" style="padding:32px 0 10px;">
+                <img class="full-img" src="assets/vinyl.png" width="460" alt="Grindr exclusive vinyl picture disc">
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center" style="padding:0 16px 34px;">
+                <a class="button" href="#" target="_blank">Grindr exclusive | Pre-order now</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="content-pad">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#000000;">
+                  <tr>
+                    <td align="center" style="padding:27px 12px;">
+                      <div class="date">Available July 3</div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="content-pad" style="padding-top:12px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td class="product-column" width="50%" valign="top" style="padding:0 6px 0 0;">
+                      <table role="presentation" class="product-card" width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <td class="product-media" align="center">
+                            <img class="product-img" src="assets/card1.png" width="294" alt="Confessions II deluxe CD">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="product-info" valign="top">
+                            <div class="product-title">Confessions II &ndash;<br>Deluxe CD<br>(16-track)</div>
+                            <div style="padding-top:17px;">
+                              <a class="product-button" href="#" target="_blank">Pre-order now</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="product-column" width="50%" valign="top" style="padding:0 0 0 6px;">
+                      <table role="presentation" class="product-card" width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <td class="product-media" align="center">
+                            <img class="product-img" src="assets/card2.png" width="294" alt="Confessions II standard 2LP set">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="product-info" valign="top">
+                            <div class="product-title">Confessions II &ndash;<br>Standard 2LP Set<br>(16 track)</div>
+                            <div style="padding-top:17px;">
+                              <a class="product-button" href="#" target="_blank">Pre-order now</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="content-pad" style="padding:12px 0 0;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#000000;">
+                  <tr>
+                    <td align="center" style="padding:22px 8px;">
+                      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <td align="center"><a class="nav-link" href="#" target="_blank">Shop</a></td>
+                          <td align="center"><a class="nav-link" href="#" target="_blank">Listen</a></td>
+                          <td align="center"><a class="nav-link" href="#" target="_blank">Watch</a></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="content-pad" align="center" style="padding:15px 0 14px;">
+                <img class="social-img" src="assets/sociais.png" width="600" alt="Social links">
+              </td>
+            </tr>
+
+            <tr>
+              <td class="content-pad" style="padding:0 0 38px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#000000;">
+                  <tr>
+                    <td align="center" style="padding:30px 24px 24px;">
+                      <div class="footer">
+                        &copy; 2026 Warner Records 777 S. Santa Fe Ave. Los Angeles, CA 90021 USA<br>
+                        This email was sent to: yourname@madonna.com You are receiving this email because you are a valid customer or subscribed to marketing messages in the past.
+                        <a href="#" target="_blank">TERMS OF USE</a> |
+                        <a href="#" target="_blank">PRIVACY POLICY</a> |
+                        <a href="#" target="_blank">UNSUBSCRIBE</a>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
